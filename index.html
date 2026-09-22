@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#6b4f2a"><meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="CRAVE Journal">
+<link rel="manifest" href="manifest.json"><link rel="apple-touch-icon" href="icon-192.png">
+<title>CRAVE Bible Study Journal</title><link rel="stylesheet" href="styles.css">
+</head><body>
+<header><div class="brand"><div class="icon">✝</div><div><h1>CRAVE</h1><p>Daily Bible Reading & Prayer Journal</p></div></div>
+<button id="installHelp">📱 Install</button></header>
+<main>
+<section class="card hero"><div><div id="dayLabel" class="eyebrow"></div><h2 id="title"></h2><div id="reference" class="reference"></div></div><div id="counter" class="counter"></div></section>
+<section class="card"><div class="sectionhead"><h3>Month</h3></div><div id="months" class="months"></div><div class="sectionhead"><h3>Days</h3></div><div id="days" class="days"></div></section>
+<section class="card"><div class="sectionhead"><h3>Journal Questions</h3><label class="complete"><input id="completed" type="checkbox"> Completed today</label></div><p class="prayer">“Thank you Father for Your Word! Open my eyes to see, my ears to hear, my heart to receive, and my mind to understand Your Scripture today.”</p><div id="questions"></div></section>
+<section class="card nav"><button id="prev">← Previous</button><button id="today">Today</button><button id="next">Next →</button></section>
+<section class="card"><h3>Daily Reminder</h3><p>Choose your preferred study time. The time is saved on this device.</p><div class="reminder"><input id="reminderTime" type="time"><button id="setReminder">Save reminder</button></div><p id="reminderStatus"></p></section>
+<section class="card"><h3>Your Journal Data</h3><p>Your answers are saved in this browser on this device. Back them up before changing phones.</p><button id="export">Export backup</button> <label class="filebtn">Import backup<input id="import" type="file" accept=".json"></label></section>
+<section id="help" class="card help"><h3>📱 Add CRAVE to your iPhone Home Screen</h3>
+<ol><li>Open this website in <strong>Safari</strong> on your iPhone.</li><li>Tap the <strong>Share</strong> button.</li><li>Scroll down and tap <strong>Add to Home Screen</strong>.</li><li>Keep the name <strong>CRAVE Journal</strong>, then tap <strong>Add</strong>.</li></ol>
+<p>The CRAVE icon will then appear beside your other apps. Open it from the Home Screen like an app.</p>
+<p><strong>Notifications:</strong> this version stores your chosen reminder time, but iPhone web apps have platform-specific notification requirements. For a dependable daily alert, you can also create a repeating reminder in Apple Reminders.</p></section>
+</main><footer>CRAVE schedule based on the uploaded CRAVE TOUR Book • August–December</footer>
+<script src="app.js"></script><script>if('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js');</script>
+</body></html>
